@@ -71,18 +71,20 @@ Observe que no segundo exemplo não é utilisado a Tag h3 para uma nova informa�
 Cada hover animate possui um valor em sua Class que é separado por um traço e virgula ( -1 ) esse número se refere à animação daquele hover.
 <br>
 Veja no link abaixo que cada imagem tem um número de referência.
-https://diegomoralesnavarro.github.io/hover_animate.github.io/
+https://diegomoralesnavarro.github.io/-hover-animate.github.io/
 <br>
 
 A class ani-2s é uma exceção, este numero se refere á velocidade de ação de 1 até 3 segundos.
 
 <br>
 
+
 Configuração avançada CSS.
 <br>
 
 Dentro da pasta CSS / estilo.css 
 <br>
+
 
 Está dividido por partes, seguindo a mesma regra separado por um traço e virgula ( -1 ).
 <br>
@@ -107,6 +109,7 @@ Obs: Também utiliza "position: absolute; " para ficar sobre a imagem e " top: 1
 
 Atenção: esse script estilo.css pode ser editado, no entanto cuidado no momento de ajustar as coordenadas dos elementos.
 <br>
+
 
 Dentro da pasta CSS / animar.css 
 <br>
