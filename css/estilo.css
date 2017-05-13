@@ -1537,3 +1537,239 @@ opacity: 1;
 	animation-name: jump-In-Up; 
   animation-fill-mode: both;
 }
+
+
+
+/*------------------------------ anima 15 ---------------------------------*/
+
+.img-hover-15 { position: relative; padding: 0; overflow: hidden; margin: 15px auto; border: 1px solid #000; }
+
+.img-hover-15 .div-info-15 { position: absolute; top: 0%; left: 50%; width: 52%; 
+height: 100%; overflow: hidden;  }
+
+.img-hover-15 h2.title-15 { position: absolute; top: 33%; left: 7%; font-size: 4.1rem;
+color: #000; text-shadow: #fff 0.2rem 0.2rem 0.3rem;  margin: 0 auto; }
+
+.img-hover-15 .div-info-15 img { position: absolute;  width: 100%; 
+height: 100%; overflow: hidden;  }
+
+.img-hover-15 h2.value-15 {  position: absolute; top: 39%; left: 19%; font-size: 3.2rem;  
+ font: bold; color: #000; margin: 0 auto;  }
+
+.bt-15 {  border: 2px solid #000; background: rgba(255, 190, 212, 0.62);
+   position: absolute; top: 82%; left: 14%;  padding: 0% 3%;  }
+
+.bt-15:hover a { text-shadow: #fff 0.2rem 0.2rem 0.3rem; color: #fff; }
+
+.bt-15 a { font: bold; color: #fff; font-size: 1.9rem;}
+
+
+/*responsivo*/
+@media only screen and (max-width: 420px) {
+
+.img-hover-15 h2.title-15 { top: 22%; left: 4%; font-size: 3.1rem;
+color: #000; text-shadow: #fff 0.2rem 0.2rem 0.3rem;  margin: 0 auto; }
+
+.img-hover-15 h2.value-15 {  font-size: 2.0rem;   }
+
+.bt-15 {   top: 78%; left: 10%;  padding: 0% 1%; }
+
+}
+
+
+/*---------------------------------------------------------------*/
+
+.animate .out-info-15 {
+opacity: 0; 
+	transition: all 2.1s;
+
+	animation-name: jump-Out-Left;
+  animation-fill-mode: both;
+}
+
+.animate:hover .in-info-15 {
+
+opacity: 1; 
+	transition: all 1.0s;
+
+
+	animation-name: jump-In-Left; 
+  animation-fill-mode: both;
+
+}
+
+/**/
+
+.animate .out-title-15 {
+
+	animation-name: pulse-Out;
+  animation-fill-mode: both;
+}
+
+.animate:hover .in-title-15 {
+
+	animation-name: pulse-In; 
+  animation-fill-mode: both;
+}
+
+/**/
+
+.animate .out-value-15 {
+	opacity: 0; 
+	transition: all 2.0s;
+
+
+	animation-name: jump-Out-Left;
+  animation-fill-mode: both;
+}
+
+.animate:hover .in-value-15 {
+	opacity: 1; 
+	transition: all 1.0s;
+
+	
+
+	animation-name: jump-In-Left;
+  animation-fill-mode: both;
+}
+
+
+/**/
+
+
+.animate .out-bt-15 {
+	opacity: 0; 
+	transition: all 2.0s;
+
+
+	animation-name: jump-Out-Down;
+  animation-fill-mode: both;
+}
+
+.animate:hover .in-bt-15 {
+	opacity: 1; 
+	transition: all 3.5s;
+
+	 animation-delay: 0.5s;
+
+	animation-name: jump-In-Up; 
+  animation-fill-mode: both;
+}
+
+
+
+/*------------------------------ anima 16 ---------------------------------*/
+
+.img-hover-16 { position: relative; padding: 0; overflow: hidden; margin: 15px auto; border: 1px solid #000; }
+
+.img-hover-16 .div-info-16 { position: absolute; top: 0%; left: 6%; width: 100%; 
+height: 100%; overflow: hidden;  }
+
+.img-hover-16 h2.title-16 { position: absolute; top: 6%; left: 4%; font-size: 4.1rem;
+color: #000; text-shadow: #fff 0.2rem 0.2rem 0.3rem;  margin: 0 auto; }
+
+.img-hover-16 .div-info-16 img { position: absolute;  width: 100%; 
+height: 100%; overflow: hidden;  }
+
+.img-hover-16 h2.value-16 {  position: absolute; top: 40%; left: 60%; font-size: 3.2rem;  
+ font: bold; color: #000; margin: 0 auto;  }
+
+.bt-16 {  border: 2px solid #000; background: rgba(255, 190, 212, 0.62);
+   position: absolute; top: 82%; left: 3%;  padding: 0% 3%;  }
+
+.bt-16:hover a { text-shadow: #fff 0.2rem 0.2rem 0.3rem; color: #fff; }
+
+.bt-16 a { font: bold; color: #fff; font-size: 1.9rem;}
+
+
+/*responsivo*/
+@media only screen and (max-width: 420px) {
+
+.img-hover-16 h2.title-16 { top: 22%; left: 3%; font-size: 3.1rem;
+color: #000; text-shadow: #fff 0.2rem 0.2rem 0.3rem;  margin: 0 auto; }
+
+.img-hover-16 h2.value-16 {  font-size: 2.0rem;   }
+
+.bt-16 {   top: 73%; left: 9%;  padding: 0% 1%; }
+
+}
+
+/*---------------------------------------------------------------*/
+
+
+.animate .out-info-16 {
+opacity: 0; 
+	transition: all 2.1s;
+
+	animation-name: jump-Out-Left;
+  animation-fill-mode: both;
+}
+
+.animate:hover .in-info-16 {
+
+opacity: 1; 
+	transition: all 1.0s;
+
+
+	animation-name: jump-In-Left; 
+  animation-fill-mode: both;
+
+}
+
+/**/
+
+.animate .out-title-16 {
+
+	animation-name: pulse-Out;
+  animation-fill-mode: both;
+}
+
+.animate:hover .in-title-16 {
+
+	animation-name: pulse-In; 
+  animation-fill-mode: both;
+}
+
+/**/
+
+.animate .out-value-16 {
+	opacity: 0; 
+	transition: all 2.0s;
+
+
+	animation-name: jump-Out-Left;
+  animation-fill-mode: both;
+}
+
+.animate:hover .in-value-16 {
+	opacity: 1; 
+	transition: all 1.0s;
+
+	
+
+	animation-name: jump-In-Left;
+  animation-fill-mode: both;
+}
+
+
+/**/
+
+
+.animate .out-bt-16 {
+	opacity: 0; 
+	transition: all 2.0s;
+
+
+	animation-name: jump-Out-Down;
+  animation-fill-mode: both;
+}
+
+.animate:hover .in-bt-16 {
+	opacity: 1; 
+	transition: all 3.5s;
+
+	 animation-delay: 0.5s;
+
+	animation-name: jump-In-Up; 
+  animation-fill-mode: both;
+}

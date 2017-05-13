@@ -81,10 +81,11 @@ A class ani-2s é uma exceção, este numero se refere á velocidade de ação d
 
 Configuração avançada CSS.
 <br>
+<br>
 
 Dentro da pasta CSS / estilo.css 
 <br>
-
+<br>
 
 Está dividido por partes, seguindo a mesma regra separado por um traço e virgula ( -1 ).
 <br>
@@ -109,11 +110,18 @@ Obs: Também utiliza "position: absolute; " para ficar sobre a imagem e " top: 1
 
 Atenção: esse script estilo.css pode ser editado, no entanto cuidado no momento de ajustar as coordenadas dos elementos.
 <br>
-
+<br>
 
 Dentro da pasta CSS / animar.css 
 <br>
 
 Estão todas as animações, e não tem a necessidade se ser editado.
+
+<br>
+<br>
+Imagem dimenção recomendada.
+Largura: 640  Altura: 360 px.
+
+<br>
 
 
