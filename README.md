@@ -1,7 +1,7 @@
 
-hover + animate
+<h2>hover + animate </h2>
 
-Instrução
+<h3>Instrução <h2>
 
 Prepare o sistema de Grid que vai receber o codigo do Hover animate.
 <br>
@@ -29,7 +29,7 @@ HTML com Bootstrap
 
 Coloque o codigo abaixo dentro do teu sistema de Grid.
 
-HTML do hover animate
+HTML do hover animate 
 
 1
 ```html
@@ -79,11 +79,11 @@ A class ani-2s é uma exceção, este numero se refere á velocidade de ação d
 <br>
 
 
-Configuração avançada CSS.
+<h3>Configuração avançada CSS. </h3>
 <br>
 <br>
 
-Dentro da pasta CSS / estilo.css 
+<h3>Dentro da pasta CSS / estilo.css  </h3>
 <br>
 <br>
 
@@ -112,14 +112,15 @@ Atenção: esse script estilo.css pode ser editado, no entanto cuidado no moment
 <br>
 <br>
 
-Dentro da pasta CSS / animar.css 
+<h3>Dentro da pasta CSS / animar.css </h3>
 <br>
 
 Estão todas as animações, e não tem a necessidade se ser editado.
 
 <br>
 <br>
-Imagem dimenção recomendada.
+<h3>Imagem dimenção recomendada. </h3>
+<br>
 Largura: 640  Altura: 360 px.
 
 <br>
