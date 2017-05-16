@@ -3,14 +3,14 @@
 
 <h3>Instrução <h2>
 
-Prepare o sistema de Grid que vai receber o codigo do Hover animate.
+<p>Prepare o sistema de Grid que vai receber o codigo do Hover animate.</p>
 <br>
-O arquivo atual utiliza o sistema de grid do Bootstrap para tornar o site responsivo.
+<p>O arquivo atual utiliza o sistema de grid do Bootstrap para tornar o site responsivo.</p>
 <br>
 http://getbootstrap.com/getting-started/#download
 
 
-HTML com Bootstrap
+<p>HTML com Bootstrap</p>
 
 
 ```html
@@ -27,9 +27,9 @@ HTML com Bootstrap
 
 ```
 
-Coloque o codigo abaixo dentro do teu sistema de Grid.
+<p>Coloque o codigo abaixo dentro do teu sistema de Grid.</p>
 
-HTML do hover animate 
+<p>HTML do hover animate </p>
 
 1
 ```html
@@ -65,16 +65,17 @@ HTML do hover animate
 						
 </figure>
 ```
-Observe que no segundo exemplo não é utilisado a Tag h3 para uma nova informação, se atente nisso na hora da escolha.
+<p>Observe que no segundo exemplo não é utilisado a Tag h3 para uma nova informação, se atente nisso na hora da escolha.</p>
 
 <br>
-Cada hover animate possui um valor em sua Class que é separado por um traço e virgula ( -1 ) esse número se refere à animação daquele hover.
+<p>Cada hover animate possui um valor em sua Class que é separado por um traço e virgula ( -1 ) esse número se refere à animação daquele hover. </p>
 <br>
-Veja no link abaixo que cada imagem tem um número de referência.
+<p>Veja no link abaixo que cada imagem tem um número de referência.</p>
+<br>
 https://diegomoralesnavarro.github.io/-hover-animate.github.io/
 <br>
 
-A class ani-2s é uma exceção, este numero se refere á velocidade de ação de 1 até 3 segundos.
+<p>A class ani-2s é uma exceção, este numero se refere á velocidade de ação de 1 até 3 segundos.</p>
 
 <br>
 
@@ -87,41 +88,41 @@ A class ani-2s é uma exceção, este numero se refere á velocidade de ação d
 <br>
 <br>
 
-Está dividido por partes, seguindo a mesma regra separado por um traço e virgula ( -1 ).
+<p>Está dividido por partes, seguindo a mesma regra separado por um traço e virgula ( -1 ).</p>
 <br>
 
-.img-hover-?  está se referindo a tag principal que vai guardar a imagem e texto.
-Obs: "position: relative; "
+<p>.img-hover-?  está se referindo a tag principal que vai guardar a imagem e texto.
+Obs: "position: relative; "</p>
 <br>
 
-.title-? esta se referindo ao título da imagem que pode ser fixo ou não de acordo com a animação escolhida.
-Obs: "position: absolute; " para ficar sobre a imagem e " top: 10%; left: 65%; " são as coordenadas para ajustar na tela.
+<p>.title-? esta se referindo ao título da imagem que pode ser fixo ou não de acordo com a animação escolhida.
+Obs: "position: absolute; " para ficar sobre a imagem e " top: 10%; left: 65%; " são as coordenadas para ajustar na tela.</p>
 <br>
 
-.div-info-? comporta o conteudo informativo.
-Obs: Também utiliza "position: absolute; " para ficar sobre a imagem e " top: 10%; left: 65%; " são as coordenadas para ajustar na tela.
+<p>.div-info-? comporta o conteudo informativo.
+Obs: Também utiliza "position: absolute; " para ficar sobre a imagem e " top: 10%; left: 65%; " são as coordenadas para ajustar na tela.</p>
 <br>
 
-.bt-? o botão que também utiliza a mesma forma de configurar como o div-info-?.
+<p>.bt-? o botão que também utiliza a mesma forma de configurar como o div-info-?.</p>
 <br>
 
-.animate é a forma de chamar a animação, essa class sempre é seguida de outra class que vai definir se é entrada "in" ou saida "out".
+<p>.animate é a forma de chamar a animação, essa class sempre é seguida de outra class que vai definir se é entrada "in" ou saida "out".</p>
 <br>
 
-Atenção: esse script estilo.css pode ser editado, no entanto cuidado no momento de ajustar as coordenadas dos elementos.
+<p>Atenção: esse script estilo.css pode ser editado, no entanto cuidado no momento de ajustar as coordenadas dos elementos.</p>
 <br>
 <br>
 
 <h3>Dentro da pasta CSS / animar.css </h3>
 <br>
 
-Estão todas as animações, e não tem a necessidade se ser editado.
+<p>Estão todas as animações, e não tem a necessidade se ser editado.</p>
 
 <br>
 <br>
 <h3>Imagem dimenção recomendada. </h3>
 <br>
-Largura: 640  Altura: 360 px.
+<p>Largura: 640  Altura: 360 px.</p>
 
 <br>
 
