@@ -1,0 +1,740 @@
+
+/*animação*/
+
+.container-hover .d-out-0, .container-hover:hover .d-in-0{
+	animation-delay: 0s;
+}
+
+.container-hover .d-out-1, .container-hover:hover .d-in-1{
+	animation-delay: 0.5s;
+}
+
+.container-hover .d-out-2, .container-hover:hover .d-in-2{
+	animation-delay: 1.0s;
+}
+
+.container-hover .d-out-3, .container-hover:hover .d-in-3{
+  animation-delay: 1.5s;
+} 
+
+
+
+
+@mixin animation ($opacity, $transition, $animation, $duration, $both ) {
+    opacity: $opacity;
+    transition: $transition;
+    animation-name: $animation;
+    animation-duration: $duration;
+    animation-fill-mode: $both;
+}
+
+
+
+.container-hover .out-height {
+@include animation (0, 9.0s, Out-Height, 1s, both);
+}
+
+.container-hover:hover .in-height {
+	@include animation (1, 1.0s, In-Height, 1s, both);
+}
+
+.container-hover .out-left {
+@include animation (0, 9.0s, Out-Left, 1s, both);
+}
+
+.container-hover:hover .in-left {
+	@include animation (1, 1.0s, In-Left, 1s, both);
+}
+
+.container-hover .out-bottom {
+@include animation (0, 9.0s, Out-bottom, 1s, both);
+}
+
+.container-hover:hover .in-bottom {
+	@include animation (1, 1.0s, In-bottom, 1s, both);
+}
+
+.container-hover .out-top {
+@include animation (0, 9.0s, Out-top, 1s, both);
+}
+
+.container-hover:hover .in-top {
+	@include animation (1, 1.0s, In-top, 1s, both);
+}
+
+.container-hover .out-pulse {
+@include animation (1, 9.0s, Out-pulse, 1s, both);
+}
+
+.container-hover:hover .in-pulse {
+	@include animation (1, 1.0s, In-pulse, 1s, both);
+}
+
+.container-hover .out-flip {
+@include animation (0, 1.0s, Out-flip, 1s, both);
+}
+
+.container-hover:hover .in-flip {
+	@include animation (1, 1.0s, In-flip, 1s, both);
+}
+
+.container-hover .out-flip-y {
+@include animation (0, 5.0s, Out-flip-Y, 1s, both);
+}
+
+.container-hover:hover .in-flip-y {
+	@include animation (1, 1.0s, In-flip-Y, 1s, both);
+}
+
+.container-hover .out-flip-x {
+@include animation (0, 5.0s, Out-flip-X, 1s, both);
+}
+
+.container-hover:hover .in-flip-x {
+	@include animation (1, 1.0s, In-flip-X, 1s, both);
+}
+
+.container-hover .out-tada {
+@include animation (1, 5.0s, Out-tada, 1s, both);
+}
+
+.container-hover:hover .in-tada {
+	@include animation (1, 1.0s, In-tada, 1s, both);
+}
+
+.container-hover .out-rubber-band  {
+@include animation (1, 5.0s, Out-rubber-band , 1s, both);
+}
+
+.container-hover:hover .in-rubber-band  {
+	@include animation (1, 1.0s, In-rubber-band , 1s, both);
+}
+
+.container-hover .out-swing  {
+@include animation (1, 5.0s, Out-swing , 1s, both);
+}
+
+.container-hover:hover .in-swing {
+	@include animation (1, 1.0s, In-swing , 1s, both);
+}
+
+.container-hover .out-wobble  {
+@include animation (1, 5.0s, Out-wobble , 1s, both);
+}
+
+.container-hover:hover .in-wobble {
+	@include animation (1, 1.0s, In-wobble , 1s, both);
+}
+
+.container-hover .out-rotate  {
+@include animation (1, 5.0s, Out-rotate , 1s, both);
+}
+
+.container-hover:hover .in-rotate {
+	@include animation (1, 1.0s, In-rotate , 1s, both);
+}
+
+.container-hover .out-bounce  {
+@include animation (1, 5.0s, Out-bounce , 1s, both);
+}
+
+.container-hover:hover .in-bounce {
+	@include animation (1, 1.0s, In-bounce , 1s, both);
+}
+
+.container-hover .out-zoom  {
+@include animation (0, 5.0s, Out-zoom , 1s, both);
+}
+
+.container-hover:hover .in-zoom {
+	@include animation (1, 1.0s, In-zoom , 1s, both);
+}
+
+.container-hover .out-zoom-down  {
+@include animation (0, 5.0s, Out-zoom-down  , 1s, both);
+}
+
+.container-hover:hover .in-zoom-down  {
+	@include animation (1, 1.0s, In-zoom-down  , 1s, both);
+}
+
+
+//fazer in out none
+
+@keyframes In-Height {
+
+	from {
+		transform: translate3d(500px, 0, 0);
+	}
+	30%{
+		transform: translate3d(0px, 0, 0);
+	}
+	50%{
+		transform: translate3d(5px, 0, 0);
+	}
+	100%{
+		transform: translate3d(2px, 0, 0);
+	}
+	to{
+		transform: translate3d(0px, 0, 0);
+	}
+}
+
+@keyframes Out-Height {
+
+	from {
+		transform: translate3d(0px, 0, 0); 
+	}
+	30%{
+		transform: translate3d(2px, 0, 0);
+	}
+	50%{
+		transform: translate3d(-0px, 0, 0);
+	}
+	100%{
+		transform: translate3d(0px, 0, 0);
+	}
+	to{
+		transform: translate3d(500px, 0, 0); 
+	}
+}
+
+/*-----------------------------------------------------------------------------*/
+
+@keyframes In-Left {
+
+  from {
+    transform: translate3d(-500px, 0, 0);
+  }
+  30%{
+    transform: translate3d(0px, 0, 0);
+  }
+  50%{
+    transform: translate3d(-5px, 0, 0);
+  }
+  100%{
+    transform: translate3d(2px, 0, 0);
+  }
+  to{
+    transform: translate3d(0px, 0, 0); 
+  }
+}
+
+@keyframes Out-Left {
+
+  from {
+    transform: translate3d(0px, 0, 0); 
+  }
+  30%{
+    transform: translate3d(-2px, 0, 0);
+  }
+  50%{
+    transform: translate3d(0px, 0, 0);
+  }
+  100%{
+    transform: translate3d(-0px, 0, 0);
+  }
+  to{
+    transform: translate3d(-500px, 0, 0); 
+  }
+}
+
+
+/*-----------------------------------------------------------------------------*/
+
+@keyframes In-bottom {
+
+	from {
+			transform: translate3d(0, 500px, 0);
+	}
+	30%{
+		transform: translate3d(0, -0px, 0);
+	}
+	50%{
+		transform: translate3d(0, 5px, 0);
+	}
+	100%{
+		transform: translate3d(0, -2px, 0);
+	}
+	to{
+		transform: translate3d(0, 0px, 0); 
+	}
+}
+
+@keyframes Out-bottom {
+	
+	from {
+		transform: translate3d(0, 0px, 0); 
+	}
+	30%{
+		transform: translate3d(0, 2px, 0);
+	}
+	50%{
+		transform: translate3d(0, -0px, 0);
+	}
+	100%{
+		transform: translate3d(0, 0px, 0);
+	}
+	to{
+		transform: translate3d(0, 500px, 0);
+	}
+}
+
+
+/*-----------------------------------------------------------------------------*/
+
+@keyframes In-top {
+
+	from {
+			transform: translate3d(0, -500px, 0);
+	}
+	30%{
+		transform: translate3d(0, 0px, 0);
+	}
+	50%{
+		transform: translate3d(0, -5px, 0);
+	}
+	100%{
+		transform: translate3d(0, 2px, 0);
+	}
+	to{
+		transform: translate3d(0, 0px, 0); 
+	}
+}
+
+@keyframes Out-top {
+	
+	from {
+		transform: translate3d(0, 0px, 0); 
+	}
+	30%{
+		transform: translate3d(0, -2px, 0);
+	}
+	50%{
+		transform: translate3d(0, 0px, 0);
+	}
+	100%{
+		transform: translate3d(0, -0px, 0);
+	}
+	to{
+		transform: translate3d(0, -500px, 0);
+	}
+}
+
+
+/*-----------------------------------------------------------------------------*/
+
+@keyframes In-pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.10, 1.10, 1.10);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes Out-pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.10, 1.10, 1.10);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/*-----------------------------------------------------------------------------*/
+
+
+@keyframes Out-flip {
+  from {
+  transform: perspective(400px) translate3d(0, 0, 0px) rotate3d(0, 1, 0, -360deg);
+  animation-timing-function: ease-in;
+  }
+  50% {
+   transform: perspective(400px) translate3d(0, 0, 100px) rotate3d(0, 1, 0, -180deg);
+  animation-timing-function: ease-in;
+  }
+  
+  to {
+  transform: perspective(400px) translate3d(0, 0, 0px) rotate3d(0, 1, 0, 0deg);
+  animation-timing-function: ease-in;
+  }
+}
+
+@keyframes In-flip {
+  from {
+  transform: perspective(400px) translate3d(0, 0, 0px) rotate3d(0, 1, 0, -0deg);
+  animation-timing-function: ease-in;
+  }
+  50% {
+   transform: perspective(400px) translate3d(0, 0, 100px) rotate3d(0, 1, 0, -180deg);
+  animation-timing-function: ease-in;
+  }
+  
+  to {
+  transform: perspective(400px) translate3d(0, 0, 0px) rotate3d(0, 1, 0, -360deg);
+  animation-timing-function: ease-in;
+  }
+}
+
+
+
+/*-----------------------------------------------------------------------------*/
+
+
+@keyframes Out-flip-Y {
+  from {
+    transform: perspective(400px);
+  }
+  30% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+  }
+  to {
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+  }
+}
+
+@keyframes In-flip-Y {
+  from {
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    animation-timing-function: ease-in;
+  }
+  40% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+  60% {
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+  }
+  80% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+  }
+  to {
+    transform: perspective(400px);
+  }
+}
+
+/*-----------------------------------------------------------------------------*/
+
+@keyframes Out-flip-X {
+  from {
+    transform: perspective(400px);
+  }
+  30% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+  }
+  to {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+  }
+}
+
+@keyframes In-flip-X {
+ from {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    animation-timing-function: ease-in;
+  }
+  30% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+  to {
+    transform: perspective(400px);
+     transform: perspective(400px) rotate3d(1, 0, 0, 0deg);
+  }
+}
+
+/*-----------------------------------------------------------------------------*/
+
+@keyframes Out-tada {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  20% {
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -1deg);
+  }
+  30%, 50%, 70%, 90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 1deg);
+  }
+  40%, 60%, 80% {
+    transform: scale3d(1.0, 1.0, 1.0) rotate3d(0, 0, 1, -1deg);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes In-tada {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  10%, 20% {
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, 1deg);
+  }
+  30%, 50%, 70%, 90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -1deg);
+  }
+  40%, 60%, 80%, 100% {
+    transform: scale3d(1.0, 1.0, 1.0) rotate3d(0, 0, 1, 1deg);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/*-----------------------------------------------------------------------------*/
+
+
+
+@keyframes In-rubber-band {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(.95, 1.05, 1);
+  }
+  80% {
+    transform: scale3d(1.05, .95, 1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes Out-rubber-band  {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(.95, 1.05, 1);
+  }
+  80% {
+    transform: scale3d(1.05, .95, 1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/*-----------------------------------------------------------------------------*/
+
+
+@keyframes In-swing {
+  30% {
+    transform: rotate3d(0, 0, 1, 10deg);
+  }
+  50% {
+    transform: rotate3d(0, 0, 1, -8deg);
+  }
+  70% {
+    transform: rotate3d(0, 0, 1, 3deg);
+  }
+  90% {
+    transform: rotate3d(0, 0, 1, -3deg);
+  }
+  to {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+@keyframes Out-swing {
+  30% {
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+  50% {
+    transform: rotate3d(0, 0, 1, 8deg);
+  }
+  70% {
+    transform: rotate3d(0, 0, 1, -3deg);
+  }
+  90% {
+    transform: rotate3d(0, 0, 1, 3deg);
+  }
+  to {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+
+/*-----------------------------------------------------------------------------*/
+
+
+@keyframes In-wobble {
+	from {
+	transform: none;
+	}
+	15% {
+	transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+	}
+	30% {
+	transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+	}
+	45% {
+	transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+	}
+	60% {
+	transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+	}
+	75% {
+	transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+	}
+	to {
+	transform: none;
+	}
+}
+
+@keyframes Out-wobble {
+	from {
+	transform: none;
+	}
+	15% {
+	transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+	}
+	30% {
+	transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+	}
+	45% {
+	transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+	}
+	60% {
+	transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+	}
+	75% {
+	transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+	}
+	to {
+	transform: none;
+	}
+}
+
+
+/*-----------------------------------------------------------------------------*/
+
+
+@keyframes In-rotate {
+	from {
+	transform: rotate3d(0, 0, 1, 360deg);
+	}
+	to  {
+	transform: rotate3d(0, 0, 1, 0deg);
+	}
+}
+
+@keyframes Out-rotate {
+	from {
+	transform: rotate3d(0, 0, 1, 0deg);
+	}
+	to {
+	transform: rotate3d(0, 0, 1, 360deg);
+	}
+}
+
+/*-----------------------------------------------------------------------------*/
+
+
+@keyframes In-bounce {
+  0%, 20%, 53%, 80%, 100% {
+  transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  transform: translate3d(0,0,0);
+  }
+  40%, 43% {
+  transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  transform: translate3d(0, -30px, 0);
+  }
+  70% {
+  transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  transform: translate3d(0, -15px, 0);
+  }
+  90% { 
+   transform: translate3d(0,-4px,0);
+  }
+}
+
+@keyframes Out-bounce {
+  0%, 20%, 53%, 80%, 100% {
+  transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  transform: translate3d(0,0,0);
+  }
+  40%, 43% {
+  transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  transform: translate3d(0, -30px, 0);
+  }
+  70% {
+  transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  transform: translate3d(0, -15px, 0);
+  }
+  90% { 
+   transform: translate3d(0,-4px,0);
+  }
+}
+
+
+/*-----------------------------------------------------------------------------*/
+
+
+@keyframes In-zoom {
+	from {
+	  transform: scale3d(0.0, 0.0, 0.0);
+	}
+	to  {
+	transform: scale3d(1.0, 1.0, 1.0);
+	}
+}
+
+@keyframes Out-zoom {
+	from {
+	  transform: scale3d(1.0, 1.0, 1.0);
+	}
+	to  {
+	 transform: scale3d(0.0, 0.0, 0.0);
+	}
+}
+
+
+
+/*-----------------------------------------------------------------------------*/
+
+
+@keyframes In-zoom-down {
+	from {
+	transform: scale3d(0.0, 0.0, 0.0) translate3d(0, -500px, 0);
+	}
+	to  {
+	transform: scale3d(1.0, 1.0, 1.0) translate3d(0, 0px, 0);
+	}
+}
+
+@keyframes Out-zoom-down {
+	from {
+	transform: scale3d(1.0, 1.0, 1.0) translate3d(0, 0px, 0);
+	}
+	to  {
+	transform: scale3d(0.0, 0.0, 0.0) translate3d(0, -500px, 0);
+	}
+}
+
+
+
+

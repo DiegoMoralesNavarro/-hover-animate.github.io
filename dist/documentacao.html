@@ -1,0 +1,174 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>hover animate</title><link rel="stylesheet" type="text/css" href="css/hover-animate.css"><link rel="stylesheet" type="text/css" href="css/style.css"><link rel="stylesheet" type="text/css" href="css/bootstrap.css"></head><body data-spy="scroll" data-target="#myScrollspy" data-offset="1"><nav id="myScrollspy" class="navbar sidebar"><div class="sidebar-toggle"><span>||</span></div><ul class="nav nav-pills flex-column"><li class="nav-item"><a class="nav-link active" href="#colunas">Colunas</a><ul><li class="nav-item"><a class="nav-link" href="#trescolunas">3 Colunas</a></li><li class="nav-item"><a class="nav-link" href="#duascolunas">2 Colunas</a></li><li class="nav-item"><a class="nav-link" href="#umacoluna">1 Coluna</a></li><li class="nav-item"><a class="nav-link" href="#col-row">Col Row</a></li><li class="nav-item"><a class="nav-link" href="#sub">Sub coluna</a></li></ul></li><li class="nav-item"><a class="nav-link" href="#alinhar">Alinhar</a></li><li class="nav-item"><a class="nav-link" href="#espaco">Espaço</a></li><li class="nav-item"><a class="nav-link" href="#fonte">Fonte</a></li><li class="nav-item"><a class="nav-link" href="#inimacao">Animação</a><ul><li class="nav-item"><a class="nav-link" href="#tempo">Tempo</a></li></ul></li><li class="nav-item"><a class="nav-link" href="#fundo">Fundo</a></li><li class="nav-item"><a class="nav-link" href="#exemplo">Exemplo</a></li></ul></nav><header><nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse d-flex"><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><h1 class="navbar-brand">Hover Animate</h1><div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown"><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li><li class="nav-item active"><a class="nav-link" href="#">Documentação</a></li></ul></div></nav></header><main><section class="m-t-5"><div class="container"><div class="row justify-content-center"><div class="col-md-8"><h2 id="colunas">Colunas</h2><br><p>O alinhamento dos elementos são feito dentro de colunas, sendo recomendado até três colunas.</p><p>Más antes de iniciar defina um tamanho para a DIV, no exemplo abaixo está sendo usado uma CLASS "limite-exemplo" que tem por padrão o width: 100% e height: 300px, essa CLASS é provisória portanto crie uma para atender sua necessidade.</p><p>E antes dessa DIV temos uma outra DIV com a ClASS "col-md-6" que é do sistema de grid do BOOTSTRAP, não é obrigatorio use o sistema de grid que mais te agrade. <a href="">https://v4-alpha.getbootstrap.com/getting-started/introduction/</a></p><br><p>Veja abaixo o exemplo da estrutura.</p><br><h4 id="trescolunas">3 colunas</h4><br></div></div><!--row--><div class="row justify-content-center"><div class="col-md-8 container-img"><img src="img/documento/3colunas.jpg"></div></div><!--row--><div class="row justify-content-center"><div class="col-md-8 container-codigo"><pre>
+						<code>
+<span class="tg">&lt;div</span> <span class="cl">class=</span><span class="cln">"col-md-6"</span><span>&gt;</span>
+	<span class="tg">&lt;figure</span> <span class="cl">class=</span><span class="cln">"limite-exemplo"</span><span>&gt;</span>
+		<span class="tg">&lt;img</span><span class="cl"> class=</span><span class="cln">"img"</span><span class="cl"> src=</span><span class="cln">"img/placeholder.png"</span><span>&gt;</span>
+		<span class="tg">&lt;div</span> <span class="cl">class=</span><span class="cln">"container-hover"</span><span>&gt;</span>
+			<span class="tg">&lt;div</span><span>&gt;</span>
+			<span>... coluna 1 ...</span>
+			<span class="tg">&lt;/div&gt;</span>
+			<span class="tg">&lt;div</span><span>&gt;</span>
+			<span>... coluna 2 ...</span>
+			<span class="tg">&lt;/div&gt;</span>
+			<span class="tg">&lt;div</span><span>&gt;</span>
+			<span>... coluna 3 ...</span>
+			<span class="tg">&lt;/div&gt;</span>
+		<span class="tg">&lt;/div&gt;</span>
+	<span class="tg">&lt;/figure&gt;</span>
+<span class="tg">&lt;/div&gt;</span>
+
+						</code>
+					</pre></div></div><!--row--><div class="row justify-content-center"><div class="col-md-8"><h4 id="duascolunas">2 colunas</h4><br></div></div><!--row--><div class="row justify-content-center"><div class="col-md-8 container-img"><img src="img/documento/2colunas.jpg"></div></div><!--row--><div class="row justify-content-center"><div class="col-md-8 container-codigo"><pre>
+						<code>
+<span class="tg">&lt;div</span> <span class="cl">class=</span><span class="cln">"col-md-6"</span><span>&gt;</span>
+	<span class="tg">&lt;figure</span> <span class="cl">class=</span><span class="cln">"limite-exemplo"</span><span>&gt;</span>
+		<span class="tg">&lt;img</span><span class="cl"> class=</span><span class="cln">"img"</span><span class="cl"> src=</span><span class="cln">"img/placeholder.png"</span><span>&gt;</span>
+		<span class="tg">&lt;div</span> <span class="cl">class=</span><span class="cln">"container-hover"</span><span>&gt;</span>
+			<span class="tg">&lt;div</span><span>&gt;</span>
+			<span>... coluna 1 ...</span>
+			<span class="tg">&lt;/div&gt;</span>
+			<span class="tg">&lt;div</span><span>&gt;</span>
+			<span>... coluna 2 ...</span>
+			<span class="tg">&lt;/div&gt;</span>
+		<span class="tg">&lt;/div&gt;</span>
+	<span class="tg">&lt;/figure&gt;</span>
+<span class="tg">&lt;/div&gt;</span>
+						</code>
+					</pre></div></div><!--row--><div class="row justify-content-center"><div class="col-md-8"><h4 id="umacoluna">1 coluna</h4><br></div></div><!--row--><div class="row justify-content-center"><div class="col-md-8 container-img"><img src="img/documento/1colunas.jpg"></div></div><!--row--><div class="row justify-content-center"><div class="col-md-8 container-codigo"><pre>
+						<code>
+<span class="tg">&lt;div</span> <span class="cl">class=</span><span class="cln">"col-md-6"</span><span>&gt;</span>
+	<span class="tg">&lt;figure</span> <span class="cl">class=</span><span class="cln">"limite-exemplo"</span><span>&gt;</span>
+		<span class="tg">&lt;img</span><span class="cl"> class=</span><span class="cln">"img"</span><span class="cl"> src=</span><span class="cln">"img/placeholder.png"</span><span>&gt;</span>
+		<span class="tg">&lt;div</span> <span class="cl">class=</span><span class="cln">"container-hover"</span><span>&gt;</span>
+			<span class="tg">&lt;div</span><span>&gt;</span>
+			<span>... coluna 1 ...</span>
+			<span class="tg">&lt;/div&gt;</span>
+		<span class="tg">&lt;/div&gt;</span>
+	<span class="tg">&lt;/figure&gt;</span>
+<span class="tg">&lt;/div&gt;</span>
+						</code>
+					</pre></div></div><!--row--><div class="row justify-content-center"><div class="col-md-8"><h2 id="col-row">Col, Row</h2><br><p>Após definir o tatal de colunas, será necessario adicionar em cada coluna um class espefica sendo dois tipos.</p><ul><li><p>fl-di-col , todos os elementos em coluna.</p></li><li><p>fl-di-row , todos os elementos em linha.</p></li></ul><p>Essas CLASS vão definir o comportamento dos elementos dentro da colunas.</p><p>Veja o exemplo abaixo.</p><h5>2 colunas</h5><br></div></div><!--row--><div class="row justify-content-center"><div class="col-md-8 container-img"><img src="img/documento/row-column.jpg"></div></div><!--row--><div class="row justify-content-center"><div class="col-md-8 container-codigo"><pre>
+						<code>
+<span class="tg">&lt;div</span><span class="cl"> class=</span><span class="cln">"fl-di-col"</span><span>&gt;</span>
+	<span><span class="tg">&lt;p</span><span>&gt;</span> <span>Titulo 1</span> <span class="tg">&lt;/p&gt;</span></span>
+	<span><span class="tg">&lt;p</span><span>&gt;</span> <span>Titulo 2</span> <span class="tg">&lt;/p&gt;</span></span>
+	<span><span class="tg">&lt;p</span><span>&gt;</span> <span>Titulo 3</span> <span class="tg">&lt;/p&gt;</span></span>
+<span class="tg">&lt;/div&gt;</span>
+<span class="tg">&lt;div</span><span class="cl"> class=</span><span class="cln">"fl-di-row"</span><span>&gt;</span>
+	<span><span class="tg">&lt;p</span><span>&gt;</span> <span>Titulo 1</span> <span class="tg">&lt;/p&gt;</span></span>
+	<span><span class="tg">&lt;p</span><span>&gt;</span> <span>Titulo 2</span> <span class="tg">&lt;/p&gt;</span></span>
+<span class="tg">&lt;/div&gt;</span>
+						</code>
+					</pre></div></div><!--row--><div class="row justify-content-center"><div class="col-md-8"><h4 id="sub">Sub coluna</h4><br><p>Tambem é possivel criar dentro da coluna, sub coluna caso necessario.</p><p>O exemplo abaixo mostra como criar o mesmo efeito de 3 colunas, usando 1 coluna e 1 sub coluna com os titulo alinhado na lateral.</p></div></div><!--row--><div class="row justify-content-center"><div class="col-md-8 container-img"><img src="img/documento/sub.jpg"></div></div><!--row--><div class="row justify-content-center"><div class="col-md-8 container-codigo"><pre>
+						<code>
+<span class="tg">&lt;div</span> <span class="cl">class=</span><span class="cln">"col-md-6"</span><span>&gt;</span>
+	<span class="tg">&lt;figure</span> <span class="cl">class=</span><span class="cln">"limite-exemplo"</span><span>&gt;</span>
+		<span class="tg">&lt;img</span><span class="cl"> class=</span><span class="cln">"img"</span><span class="cl"> src=</span><span class="cln">"img/placeholder.png"</span><span>&gt;</span>
+		<span class="tg">&lt;div</span> <span class="cl">class=</span><span class="cln">"container-hover"</span><span>&gt;</span>
+			<span class="tg">&lt;div</span><span class="cl"> class=</span><span class="cln">"fl-di-col ju-co-between al-it-center"</span><span>&gt;</span>
+			<span><span class="tg">&lt;h2</span><span class="cl"><span>&gt;</span> <span>Titulo 1</span> <span class="tg">&lt;/h2&gt;</span></span>
+				<span class="tg">&lt;div</span><span class="cl"> class=</span><span class="cln">"fl-di-row ju-co-around al-it-center"</span><span>&gt;</span>
+					<span><span class="tg">&lt;h2</span><span class="cl"><span>&gt;</span> <span>Titulo 2</span> <span class="tg">&lt;/h2&gt;</span></span>
+					<span><span class="tg">&lt;h2</span><span class="cl"><span>&gt;</span> <span>Titulo 3</span> <span class="tg">&lt;/h2&gt;</span></span>
+				<span class="tg">&lt;/div&gt;</span>
+			<span class="tg">&lt;/div&gt;</span>
+		<span class="tg">&lt;/div&gt;</span>
+	<span class="tg">&lt;/figure&gt;</span>
+<span class="tg">&lt;/div&gt;</span>
+						</span></span></span></code>
+					</pre></div></div><!--row--></div><!--container--></section><section><div class="container"><div class="row justify-content-center"><div class="col-md-8"><h2 id="alinhar">Alinhar</h2><br><p>Para fazer o alinhamento utilize as CLASS abaixo, dentro da DiV que corresponde à coluna.</p><br><ul><li><p>al-it-end , Alinhar a direita.</p></li><li><p>al-it-start , alinhar a esquerda.</p></li><li><p>al-it-center , alinhar no centro.</p></li><li><p>al-se-end , Alinhar no fim.</p></li><li><p>al-se-start , alinhar no inicio.</p></li><li><p>al-se-center , alinhar no centro.</p></li><li><p>ju-co-around , Espaço entre os elementos, com espaço no inicio e fim.</p></li><li><p>ju-co-between , Espaço entre os elementos, sem espaço no inicio e fim.</p></li></ul><br><p>Veja o exemplo abaixo.</p></div></div><div class="row justify-content-center"><div class="col-md-8 container-codigo"><pre>
+						<code>
+<span class="tg">&lt;div</span><span class="cl"> class=</span><span class="cln">"fl-di-col ju-co-around al-it-center"</span><span>&gt;</span>
+	<span><span class="tg">&lt;p</span><span>&gt;</span> <span>Titulo 1</span> <span class="tg">&lt;/p&gt;</span></span>
+	<span><span class="tg">&lt;p</span><span>&gt;</span> <span>Titulo 2</span> <span class="tg">&lt;/p&gt;</span></span>
+	<span><span class="tg">&lt;p</span><span>&gt;</span> <span>Titulo 3</span> <span class="tg">&lt;/p&gt;</span></span>
+<span class="tg">&lt;/div&gt;</span>
+<span class="tg">&lt;div</span><span class="cl"> class=</span><span class="cln">"fl-di-row al-it-center al-se-end"</span><span>&gt;</span>
+	<span><span class="tg">&lt;p</span><span>&gt;</span> <span>Titulo 1</span> <span class="tg">&lt;/p&gt;</span></span>
+	<span><span class="tg">&lt;p</span><span>&gt;</span> <span>Titulo 2</span> <span class="tg">&lt;/p&gt;</span></span>
+<span class="tg">&lt;/div&gt;</span>
+						</code>
+					</pre></div></div><!--row--><div class="row justify-content-center"><div class="col-md-8"><h2 id="espaco">Espaço</h2><br><p>Para dar espaço nos elementos temos duas formas, usando padding ou margin.</p><p>Tanto padding quanto margin usam o mesmo valor</p><ul><li><p>0 = 0rem</p></li><li><p>1 = 0.25rem</p></li><li><p>2 = 0.5rem</p></li><li><p>3 = 1.0rem</p></li><li><p>4 = 1.5rem</p></li><li><p>5 = 3.0rem</p></li><li><p>6 = 6.0rem</p></li></ul><br><p>Class usando padding, no lugar do * coloque um valor de 0 á 6 que correponde o tamanho.</p><ul><li><p>p-* , todos os lados.</p></li><li><p>p-l-* , somente na esquerda.</p></li><li><p>p-r-* , somente na direita.</p></li><li><p>p-lr-* , somente na esquerda e direita.</p></li><li><p>p-t-* , somente no topo.</p></li><li><p>p-b-* , somente no rodapé.</p></li><li><p>p-tb-* , somente no topo e rodapé.</p></li></ul><br><p>Class usando margin, no lugar do * coloque um valor de 0 á 6 que correponde o tamanho.</p><ul><li><p>m-* , todos os lados.</p></li><li><p>m-l-* , somente na esquerda.</p></li><li><p>m-r-* , somente na direita.</p></li><li><p>m-lr-* , somente na esquerda e direita.</p></li><li><p>m-t-* , somente no topo.</p></li><li><p>m-b-* , somente no rodapé.</p></li><li><p>m-tb-* , somente no topo e rodapé.</p></li></ul><br><p>Veja o exemplo abaixo.</p></div></div><div class="row justify-content-center"><div class="col-md-8 container-codigo"><pre>
+						<code>
+<span class="tg">&lt;div</span><span class="cl"> class=</span><span class="cln">"fl-di-col"</span><span>&gt;</span>
+	<span><span class="tg">&lt;p</span><span class="cl"> class=</span><span class="cln">"m-l-3"</span><span>&gt;</span> <span>Titulo 1</span> <span class="tg">&lt;/p&gt;</span></span>
+	<span><span class="tg">&lt;p</span><span class="cl"> class=</span><span class="cln">"m-5"</span><span>&gt;</span> <span>Titulo 2</span> <span class="tg">&lt;/p&gt;</span></span>
+	<span><span class="tg">&lt;p</span><span>&gt;</span> <span>Titulo 3</span> <span class="tg">&lt;/p&gt;</span></span>
+<span class="tg">&lt;/div&gt;</span>
+<span class="tg">&lt;div</span><span class="cl"> class=</span><span class="cln">"fl-di-row"</span><span>&gt;</span>
+	<span><span class="tg">&lt;p</span><span class="cl"> class=</span><span class="cln">"p-tb-2"</span><span>&gt;</span> <span>Titulo 1</span> <span class="tg">&lt;/p&gt;</span></span>
+	<span><span class="tg">&lt;p</span><span>&gt;</span> <span>Titulo 2</span> <span class="tg">&lt;/p&gt;</span></span>
+<span class="tg">&lt;/div&gt;</span>
+						</code>
+					</pre></div></div><!--row--><div class="row justify-content-center"><div class="col-md-8"><h2 id="fonte">Fonte</h2><br><p>CLASS referente ao tamanho da fonte.</p><br><ul><li><p>f-s-1 = 0.7rem</p></li><li><p>f-s-2 = 1.0rem</p></li><li><p>f-s-3 = 1.5rem</p></li><li><p>f-s-4 = 2.0rem</p></li><li><p>f-s-5 = 2.5rem</p></li><li><p>f-s-6 = 3.0rem</p></li><li><p>f-s-7 = 4.5rem</p></li></ul><br></div></div><div class="row justify-content-center"><div class="col-md-8"><h2 id="inimacao">Animação</h2><br><p>As animações possuem duas CLASS, uma que representa a entrada e outra a saída.</p><br><p>Essa CLASS deve ser usado no elemento, e não na coluna.</p><ul><li><p>out-height in-height</p></li><li><p>out-left in-left</p></li><li><p>out-bottom in-bottom</p></li><li><p>out-top in-top</p></li><li><p>out-pulse in-pulse</p></li><li><p>out-flip in-flip</p></li><li><p>out-flip-y in-flip-y</p></li><li><p>out-flip-x in-flip-x</p></li><li><p>out-tada in-tada</p></li><li><p>out-rubber-band in-rubber-band</p></li><li><p>out-swing in-swing</p></li><li><p>out-wobble in-wobble</p></li><li><p>out-rotate in-rotate</p></li><li><p>out-bounce in-bounce</p></li><li><p>out-zoom in-zoom</p></li><li><p>out-zoom-down in-zoom-down</p></li></ul><br><h5 id="tempo">Tempo</h5><br><p>É possível definir o tempo que vai iniciar e terminar a ação do Hover.</p><br><ul><li><p>0 = 0s</p></li><li><p>1 = 0.5s</p></li><li><p>2 = 1.0s</p></li><li><p>3 = 1.5s</p></li></ul><br><p>Coloque no lugar do * um valor de 0 á 3.</p><br><ul><li><p>d-out-*</p></li><li><p>d-in-*</p></li></ul><br><p>Veja o exemplo abaixo.</p></div></div><div class="row justify-content-center"><div class="col-md-8 container-codigo"><pre>
+						<code>
+<span class="tg">&lt;div</span><span class="cl"> class=</span><span class="cln">"fl-di-col"</span><span>&gt;</span>
+	<span><span class="tg">&lt;p</span><span class="cl"> class=</span><span class="cln">"out-height  in-height  d-in-1 d-out-1"</span><span>&gt;</span> <span>Titulo 1</span> <span class="tg">&lt;/p&gt;</span></span>
+<span class="tg">&lt;/div&gt;</span>
+<span class="tg">&lt;div</span><span class="cl"> class=</span><span class="cln">"fl-di-row"</span><span>&gt;</span>
+	<span><span class="tg">&lt;p</span><span class="cl"> class=</span><span class="cln">"out-bounce  in-bounce  d-in-0 d-out-2"</span><span>&gt;</span> <span>Titulo 1</span> <span class="tg">&lt;/p&gt;</span></span>
+<span class="tg">&lt;/div&gt;</span>
+						</code>
+					</pre></div></div><!--row--><div class="row justify-content-center"><div class="col-md-8"><h2 id="fundo">Fundo</h2><br><p>É possivel colocar um segundo fundo de imagem para animação usando a Tag IMG, esse fundo fica dentro da DIV que contem a CLASS "container-hover".</p><p>Crie sua imagem de fundo ou use a disponivel.</p><br></div></div><div class="row justify-content-center text-center"><div class="col-md-4"><p>black-bottom-small.png</p><div class="col container-codigo container-img"><img src="img/bg/black-bottom-small.png"></div></div><div class="col-md-4"><p>black-top-small.png</p><div class="col container-codigo container-img"><img src="img/bg/black-top-small.png"></div></div></div><!--row--><div class="row justify-content-center text-center"><div class="col-md-4"><p>black-left-small.png</p><div class="col container-codigo container-img"><img src="img/bg/black-left-small.png"></div></div><div class="col-md-4"><p>black-right-small.png</p><div class="col container-codigo container-img"><img src="img/bg/black-right-small.png"></div></div></div><!--row--><div class="row justify-content-center text-center"><div class="col-md-4"><p>inclined-left-bt.png</p><div class="col container-codigo container-img"><img src="img/bg/inclined-left-bt.png"></div></div><div class="col-md-4"><p>inclined-left-top.png</p><div class="col container-codigo container-img"><img src="img/bg/inclined-left-top.png"></div></div></div><!--row--><div class="row justify-content-center text-center"><div class="col-md-4"><p>inclined-right-bt.png</p><div class="col container-codigo container-img"><img src="img/bg/inclined-right-bt.png"></div></div><div class="col-md-4"><p>inclined-right-top.png</p><div class="col container-codigo container-img"><img src="img/bg/inclined-right-top.png"></div></div></div><!--row--><div class="row justify-content-center"><div class="col-md-8 container-codigo"><pre>
+						<code>
+<span class="tg">&lt;div</span> <span class="cl">class=</span><span class="cln">"col-md-6"</span><span>&gt;</span>
+	<span class="tg">&lt;figure</span> <span class="cl">class=</span><span class="cln">"limite-exemplo"</span><span>&gt;</span>
+		<span class="tg">&lt;img</span><span class="cl"> class=</span><span class="cln">"img"</span><span class="cl"> src=</span><span class="cln">"img/placeholder.png"</span><span>&gt;</span>
+		<span class="tg">&lt;div</span> <span class="cl">class=</span><span class="cln">"container-hover"</span><span>&gt;</span>
+
+		<span class="tg">&lt;img</span><span class="cl"> class=</span><span class="cln">"img"</span><span class="cl"> src=</span><span class="cln">"img/bg/inclined-right-top.png"</span><span>&gt;</span>
+			<span class="tg">&lt;div</span><span>&gt;</span>
+			<span>... coluna 1 ...</span>
+			<span class="tg">&lt;/div&gt;</span>
+			<span class="tg">&lt;div</span><span>&gt;</span>
+			<span>... coluna 2 ...</span>
+			<span class="tg">&lt;/div&gt;</span>
+		<span class="tg">&lt;/div&gt;</span>
+	<span class="tg">&lt;/figure&gt;</span>
+<span class="tg">&lt;/div&gt;</span>
+						</code>
+					</pre></div></div><!--row--><div class="row justify-content-center"><div class="col-md-8"><h2 id="exemplo">Exemplo completo</h2><br><h5>2 colunas</h5><p>Todos alinhado ao centro referente á sua coluna.</p></div></div><div class="row justify-content-center"><div class="col-md-8 container-codigo"><pre>
+						<code>
+<span class="tg">&lt;div</span> <span class="cl">class=</span><span class="cln">"col-md-6"</span><span>&gt;</span>
+	<span class="tg">&lt;figure</span> <span class="cl">class=</span><span class="cln">"limite-exemplo"</span><span>&gt;</span>
+		<span class="tg">&lt;img</span><span class="cl"> class=</span><span class="cln">"img"</span><span class="cl"> src=</span><span class="cln">"img/placeholder.png"</span><span>&gt;</span>
+		<span class="tg">&lt;div</span> <span class="cl">class=</span><span class="cln">"container-hover"</span><span>&gt;</span>
+
+		<span class="tg">&lt;img</span><span class="cl"> class=</span><span class="cln">"img out-left in-left d-in-0 d-out-1"</span><span class="cl"> src=</span><span class="cln">"img/bg/black-left.png"</span><span>&gt;</span>
+
+		<span class="tg">&lt;div</span><span class="cl"> class=</span><span class="cln">"fl-di-row al-it-center al-se-center"</span><span>&gt;</span>
+			<span><span class="tg">&lt;h2</span><span class="cl"> class=</span><span class="cln">"f-s-5 m-r-2 out-left in-left d-in-1"</span><span>&gt;</span> <span>Titulo 1</span> <span class="tg">&lt;/h2&gt;</span></span>
+		<span class="tg">&lt;/div&gt;</span>
+		<span class="tg">&lt;div</span><span class="cl"> class=</span><span class="cln">"fl-di-row al-it-center al-se-center"</span><span>&gt;</span>
+			<span><span class="tg">&lt;button</span><span class="cl"> class=</span><span class="cln">"out-height in-height d-in-2 bt-black"</span><span>&gt;</span> <span>
+				<span class="tg">&lt;a</span><span class="cl"> href=</span><span class="cln">""</span><span>&gt;</span>Confira<span class="tg">&lt;/a&gt;</span>
+			</span> <span class="tg">&lt;/button&gt;</span></span>
+		<span class="tg">&lt;/div&gt;</span>
+			
+		<span class="tg">&lt;/div&gt;</span>
+	<span class="tg">&lt;/figure&gt;</span>
+<span class="tg">&lt;/div&gt;</span>
+
+						</code>
+					</pre></div></div><!--row--><div class="row justify-content-center"><div class="col-md-8"><h5>1 coluna</h5><p>Este exemplo mostra 1 coluna e dentro 1 sub coluna. Cada titulo para um lado “titulo 1 na esquerda, titulo 2 na direita” e botão no centro inferior.</p></div></div><div class="row justify-content-center"><div class="col-md-8 container-codigo"><pre>
+						<code>
+<span class="tg">&lt;div</span> <span class="cl">class=</span><span class="cln">"col-md-6"</span><span>&gt;</span>
+	<span class="tg">&lt;figure</span> <span class="cl">class=</span><span class="cln">"limite-exemplo"</span><span>&gt;</span>
+		<span class="tg">&lt;img</span><span class="cl"> class=</span><span class="cln">"img"</span><span class="cl"> src=</span><span class="cln">"img/placeholder.png"</span><span>&gt;</span>
+
+		<span class="tg">&lt;div</span> <span class="cl">class=</span><span class="cln">"container-hover"</span><span>&gt;</span>
+			<span class="tg">&lt;div</span><span class="cl"> class=</span><span class="cln">"fl-di-col ju-co-between al-it-center"</span><span>&gt;</span>
+				<span class="tg">&lt;div</span><span class="cl"> class=</span><span class="cln">"fl-di-row ju-co-around al-it-center out-zoom-down in-zoom-down"</span><span>&gt;</span>
+					<span><span class="tg">&lt;h2</span><span class="cl"> class=</span><span class="cln">"f-s-5 m-r-2 out-left in-left d-in-1"</span><span>&gt;</span> <span>Titulo 1</span> <span class="tg">&lt;/h2&gt;</span></span>
+					<span><span class="tg">&lt;h2</span><span class="cl"> class=</span><span class="cln">"f-s-5 m-r-2 out-left in-left d-in-1"</span><span>&gt;</span> <span>Titulo 2</span> <span class="tg">&lt;/h2&gt;</span></span>
+				<span class="tg">&lt;/div&gt;</span>
+			<span><span class="tg">&lt;button</span><span class="cl"> class=</span><span class="cln">"in-tada out-tada d-in-1 d-out-0 m-b-3"</span><span>&gt;</span> <span>
+				<span class="tg">&lt;a</span><span class="cl"> href=</span><span class="cln">""</span><span>&gt;</span>Confira<span class="tg">&lt;/a&gt;</span>
+			</span> <span class="tg">&lt;/button&gt;</span></span>
+			<span class="tg">&lt;/div&gt;</span>
+		<span class="tg">&lt;/div&gt;</span>
+	<span class="tg">&lt;/figure&gt;</span>
+<span class="tg">&lt;/div&gt;</span>
+
+						</code>
+					</pre></div></div><!--row--></div><!--container--></section></main><footer><div class="container"><div class="row"><div class="col centralizar"><h5>Diego Morales Navarro</h5><a href="">GitHub</a></div></div></div></footer><button class="subir">Subir</button><script src="js/main.js"></script><script src="js/app.js"></script></body></html>
