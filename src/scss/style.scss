@@ -2,7 +2,7 @@
 .home{
 	background-color: #282929;
 
-	main{margin: 70px auto;}
+	main{margin-top: 50px; margin-bottom: 20px; }
 
 	.container-hover{
 		h2 { color: #fff; text-shadow: #000 0.2rem 0.4rem 0.5rem; }
@@ -19,10 +19,10 @@
 
 
 .banner-info { 
-	margin: 60px auto;
+	margin: 30px auto;
+	padding: 20px 20px;
 	background-color: #474747;
-	height: 150px;
-	padding: 0 10%;
+	height: auto;
 	color: #fff;
 	display: flex;
 	justify-content: center;
@@ -67,6 +67,13 @@ footer{
   		     img{ width: 100%; height: 100%; }
 }
 
+.vertical-menu {
+    height: 400px;
+    overflow-y: auto;
+}
+
+
+
 
 body {
   position: relative;
@@ -76,13 +83,36 @@ body {
 		.sidebar{
 			position: fixed;
 			left: -151px;
-			top: 9%;
+			top: 13%;
 			z-index: 5;
 			width: 150px;
 			padding: 1px;
 			background: rgba(0, 0, 0, 0.83);
 			border-radius: 0px 6px 6px 0px;
 			transition: 1s;
+
+			::-webkit-scrollbar{ width:10px; height:10px; }
+			::-webkit-scrollbar-button:start:decrement, 
+			::-webkit-scrollbar-button:end:increment{ 
+			  display:block;
+			  height:0;
+			  background-color:transparent;
+			}
+			::-webkit-scrollbar-track-piece{
+			  background-color: #fff;
+			  -webkit-border-radius: 0px 6px 6px 0px;
+			}
+			::-webkit-scrollbar-thumb:vertical{
+			  height:10px;
+			  background-color:#000;
+			  -webkit-border-radius: 0px 6px 6px 0px;
+			}
+			::-webkit-scrollbar-thumb:horizontal{
+			  width:55px;
+			  background-color:#000;
+			  -webkit-border-radius: 0px 6px 6px 0px;
+			}
+
 		&:hover{ left: 0px; }
 
 		.sidebar-toggle {
@@ -108,10 +138,10 @@ body {
 		} 
 	}
 
-	.sidebar-open{
-		left: 0px;
-		transition: 1s;
-	}
+	// .sidebar-open{
+	// 	left: 0px;
+	// 	transition: 1s;
+	// }
 
 }
 

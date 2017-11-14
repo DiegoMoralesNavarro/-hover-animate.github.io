@@ -1,9 +1,9 @@
 $( document ).ready(function() {
 
 
-	$(".sidebar-toggle").on("click", function(){
-		$( ".sidebar" ).toggleClass( "sidebar-open" );
-	})
+	// $(".sidebar-toggle").on("click", function(){
+	// 	$( ".sidebar" ).toggleClass( "sidebar-open" );
+	// })
 
 
 	var link = $(".nav-link");
