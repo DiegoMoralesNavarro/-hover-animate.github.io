@@ -9,12 +9,15 @@
 		.bt-home{
 			border-radius: 8px; border: 1px solid #FF9800;
 			background: linear-gradient(#FF9800, #cc7900);
+			color: #fff;
+			padding: 2px 19px; 
+			 font-size: 2rem;
 
-			&:hover{ background: linear-gradient(#ffa41e, #dc8d1a); }
-			a, a:hover { color: #fff; text-decoration: none; padding: 0.0rem 1rem; font-size: 2rem;}
+			&:hover{ background: linear-gradient(#ffa41e, #dc8d1a); 
+			color: #fff; text-decoration: none;}
 		}
 	}
-	.limite-home{ width: 100%; height: 400px; position: relative; margin: 1rem auto; }
+	.limite-home{ width: 100%; height: 380px; position: relative; margin: 0.8rem auto; }
 }
 
 
@@ -249,78 +252,101 @@ body {
 .bt-pink {  
 	border-radius: 5px; border: 1px solid #ec467f;
 	background: linear-gradient(#ec467f, #E91E63);
+	color: #fff;
+	padding: 0px 5px; 
 
-	&:hover {background: linear-gradient(#f56496, #f5417e); }
-	a, a:hover { color: #fff; text-decoration: none; }
+	&:hover {background: linear-gradient(#f56496, #f5417e);
+	 color: #fff; text-decoration: none; }
 }
 
 .bt-green {  
 	border-radius: 5px; border: 1px solid #8BC34A;
 	background: linear-gradient(#8BC34A, #4CAF50 );
+	color: #fff;
+	padding: 0px 5px; 
 
-	&:hover {background: linear-gradient(#9dcc68, #63b766); }
-	a, a:hover { color: #fff; text-decoration: none; }
+	&:hover {background: linear-gradient(#9dcc68, #63b766);
+	 color: #fff; text-decoration: none; }
 }
 
 .bt-orange {  
 	border-radius: 5px; border: 1px solid #FF9800;
 	background: linear-gradient(#FF9800, #cc7900);
+	color: #fff;
+	padding: 0px 5px; 
 
-	&:hover {background: linear-gradient(#ffa41e, #dc8d1a); }
-	a, a:hover { color: #fff; text-decoration: none; }
+	&:hover {background: linear-gradient(#ffa41e, #dc8d1a);
+	 color: #fff; text-decoration: none; }
 }
 
 .bt-red {  
 	border-radius: 5px; border: 1px solid #ce0623;
 	background: linear-gradient(#ce0623, #b4001a);
 	width: 50%;
+	color: #fff;
+	padding: 0px 5px; 
+	text-align: center;
 
-	&:hover {background: linear-gradient(#fc0327, #dd0423); }
-	a, a:hover { color: #f4cc15; text-decoration: none; width: 100%; }
+	&:hover {background: linear-gradient(#fc0327, #dd0423); 
+	 color: #f4cc15; text-decoration: none;  }
 }
 
 .bt-black-red {  
 	border-radius: 8px; border: 0px solid #ee0404;
 	background: rgba(0, 0, 0, 0.82);
 	width: 90%;
+	color: #fff;
+	padding: 0px 5px; 
+	text-align: center;
 
-	&:hover { background: rgba(255, 37, 5, 0.59); }
-	a, a:hover { color: #fff; text-decoration: none; }
+	&:hover { background: rgba(255, 37, 5, 0.59);
+	 color: #fff; text-decoration: none; }
 }
 
 
 .bt-green-2 {  
 	border-radius: 0px; border: 1px solid #8BC34A;
 	background: #8BC34A;
+	color: #fff;
+	padding: 1px 9px; 
 
-	&:hover {background: #9dcc68; }
-	a, a:hover { color: #fff; text-decoration: none; }
+	&:hover {background: #9dcc68;
+	 color: #fff; text-decoration: none; }
 }
 
 .bt-white {  
 	border-radius: 8px; border: 1px solid #fff;
 	background: rgba(0, 0, 0, 0.0);
 	width: 90%;
+	color: #fff;
+	padding: 0px 5px; 
+	text-align: center;
 
-	&:hover { background: rgba(255, 255, 255, 0.59); }
-	a, a:hover { color: #fff; text-decoration: none; }
+	&:hover { background: rgba(255, 255, 255, 0.59); 
+	color: #fff; text-decoration: none; }
 }
 
 .bt-black {  
 	border-radius: 5px; border: 0px solid #000;
 	background: linear-gradient(#707070, #000);
 	width: 80%;
+	color: #fff;
+	padding: 0px 5px; 
+	text-align: center;
 
-	&:hover {background: linear-gradient(#b0b2b2, #2d2d2d); }
-	a, a:hover { font: bold; color: #fff; text-decoration: none; }
+	&:hover {background: linear-gradient(#b0b2b2, #2d2d2d);
+	 font: bold; color: #fff; text-decoration: none; }
 }
 
 .bt-yellow {  
 	border-radius: 5px; border: 0px solid #ffe822;
 	background: linear-gradient(#dbc719, #e1ca01);
+	color: #fff;
+	padding: 0px 5px; 
+	text-align: center;
 
-	&:hover {background: linear-gradient(#ffe60d, #f1d902); }
-	a, a:hover { font: bold; color: #000; text-decoration: none; }
+	&:hover {background: linear-gradient(#ffe60d, #f1d902); 
+	font: bold; color: #000; text-decoration: none; }
 }
 
 
